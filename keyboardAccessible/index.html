@@ -8,9 +8,22 @@
 </head>
 <body>
   <main>
-    <nav></nav>
-    <section class="heroContainer"></section>
+    <nav id="site-navigation" aria-label="Main">
+      <!--Aria-Expanded announces to screen reader-->
+      <button id="hamburger" aria-expanded="false" aria-label="Menu">
+        Hamburger
+      </button>
+      <ul>
+        <a>Test</a>
+        <a>Test</a>
+        <a>Test</a>
+      </ul>
+    </nav>
+    <section class="heroContainer">
+      <h1>Keyboard Accessible NAV</h1>
+    </section>
   </main>
   <footer></footer>
+  <script src="./index.js"></script>
 </body>
 </html>
