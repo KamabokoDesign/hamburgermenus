@@ -18,19 +18,93 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
-.renderContainer {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
   background-color: #121212;
+}
+
+.renderContainer {
+  padding: 2rem;
   color: white;
 }
 
 .renderContainer h1 {
+  text-align: center;
   font-size: 1.4rem;
   letter-spacing: 1.5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*Card Container*/
+.cardContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Card Parent*/
+.individualCard {
+  width: 240px;
+  height: 320px;
+  border-radius: 1rem;
+  background-color: #1e1e1e;
+
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 15%), 0 1px 4px rgb(0 0 0 / 15%);
+}
+
+/*Image Crop*/
+.imageCrop {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.imageCrop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Image Overlay*/
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: #66e2ea;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+/*Card Description*/
+.cardDescription {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.cardDescription h2 {
+  height: 20px;
+  text-overflow: ellipsis;
+}
+
+.cardDescription p {
+  margin-top: 10px;
+  height: 70px;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
 }
 
 /*#3700B3 #03DAC6*/
