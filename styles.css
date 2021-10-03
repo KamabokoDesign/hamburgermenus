@@ -99,6 +99,7 @@ a {
 .cardDescription {
   margin-top: 1rem;
   text-align: center;
+  padding: 0 2rem;
 }
 
 .cardDescription h2 {
