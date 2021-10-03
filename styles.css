@@ -40,14 +40,16 @@ a {
 
 /*Card Container*/
 .cardContainer {
-  margin-top: 2rem;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /*Card Parent*/
 .individualCard {
+  margin: 10px;
   width: 240px;
   height: 320px;
   border-radius: 1rem;
@@ -123,6 +125,9 @@ a {
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .cardContainer {
+    flex-direction: row;
+  }
 }
 
 /* Larger than Desktop HD */
