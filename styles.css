@@ -24,7 +24,16 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #121212;
+  color: white;
 }
+
+.renderContainer h1 {
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+}
+
+/*#3700B3 #03DAC6*/
 
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
